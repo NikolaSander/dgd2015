@@ -1,0 +1,330 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DGD Jahrestagung 2015</title>
+		<meta name="description" content="Quantifizierung, Visualisierung und Kommunikation von globalen Wanderungsströmen">
+		<meta name="author" content="Nikola Sander">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/nikola.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );}
+		</script>
+		
+		<!--[if lt IE 9]><script src="lib/js/html5shiv.js"></script><![endif]-->
+
+	  <!-- D3 -->
+		<link href="d3/dist/app-v1.css" rel="stylesheet" media="all">
+		<!--[if lt IE 9]><script src=javascripts/html5shiv-printshiv.js></script><![endif]-->
+		<script src="d3/dist/app-v1.js"></script>
+	  	  
+	 <!-- Twitter colour theme -->
+		<meta name="twitter:widgets:link-color" content="#FF7F00">
+		<meta name="twitter:widgets:theme" content="dark">
+	
+	<style type="text/css">
+        .reveal h1,
+        .reveal h2,
+        .reveal h3,
+        .reveal h4,
+        .reveal h5,
+        .reveal h6 {
+            word-wrap: normal;
+            -webkit-hyphens: manual;
+            -moz-hyphens: manual;
+            hyphens: manual;}
+    </style>
+	
+	</head>
+	<body>
+	<div class="reveal">
+		<div class="slides">
+
+		<!-- SLIDES -->		
+
+			<section>
+				<h2>Quantifizierung, Visualisierung und Kommunikation von <br>globalen Wanderungsströmen</h2>
+				<h3>Nikola Sander</h3>
+				<h4>Vienna Institute of Demography (ÖAW)</h4>
+				<br>
+				<h4>DGD Jahrestagung, Berlin, März 2015</h4>
+				<h4>Slides: <a href="http://www.nikolasander.com/igu2014" target="_blank">nikolasander.com/dgd2015</a></h4>
+			</section>
+
+
+			<section data-background="images/spiegel-zuwanderung1.jpg">				
+			</section>
+			
+			<section>
+				<h2>Bezifferung globaler Migrationsströme</h2>
+				<p>Ist äußerst schwierig!</p>
+				<p>Messung von Migrationsströmen variiert von Land zu Land</p>
+				<p>Vergleich nationaler Daten ähnelt dem zwischen Äpfeln und Birnen</p>
+				<p>Harmonisierte Daten nur für Europa, z.B. IMEM</p>
+			</section>			
+			
+			<section>
+				<h2>Bezifferung der im Ausland geborenen Bevölkerung</h2>
+				<p>Ist deutlich einfacher!</p>
+				<p>Geburtsland wird in Völkszählungen und Registern erfasst.</p>
+				<p>UNO hat 2013 einen globalen, bilateralen Datensatz veröffentlicht.</p>
+				<p>Aber: akkumulative Werte die keine akutellen Wanderungstrends abbilden.</p>
+			</section>					
+	
+			<section data-background="images/boat_italian_navy.jpeg">				
+				<h2 style="background-color: rgba(0, 0, 0, 0.4)"><font color="white">Wie hoch ist der Anteil der Weltbevölkerung der zwischen 2005 und 2010 in ein anderes Land migriert ist?</font></h2>
+			</section>
+			
+			<section>
+				<h2><a href="http://www.sciencemag.org/content/343/6178/1520" target="_blank"> Quantifying Global International Migration Flows</a></h2>
+				<p>Guy Abel & Nikola Sander.<br>Veröffentlicht in <i>Science</i> am 28. März 2014; Vol 343: 1520-1522.</p> 
+				<br>
+				<img src="images/science.png"  width="300">
+			</section>			
+			
+			<section>
+				<h2>Neues Modell für die Berechnung von Migrationsströmen</h2>
+				<table><tr>
+				<td>
+				<h3 style="text-decoration: underline">UNO Bestandsdaten</h3>
+				<p>Transitionen zwischen <br>Geburtsort und Wohnort</p>
+				<p>1990, 2000, 2010</p>
+				<p>~220 Länder</p></td>
+				<td><h2>&#10140; </h2></td>
+				<td style="padding-left:1.25em">
+				<h3 style="text-decoration: underline">Neue Schätzungen</h3>
+				<p>Transitionen zwischen <br>Wohnorten über 5 Jahre</p>
+				<p>1990-95 bis 2005-10</p>
+				<p>196 Länder</p></td>
+				</tr></table>
+			</section>	
+
+			<section>
+				<h2>Hypothetisches Beispiel: Bestandsdaten im Jahr 2000</h2>
+				<img src="images/Table_2000.png"  width="650">
+			</section>			
+			
+			<section>
+				<h2>Bestandsdaten in den Jahren 2000 und 2010</h2>
+				<img src="images/Table_2000_2010.png"  width="1200">
+			</section>	
+
+			<section>
+				<h2>Bestandsdaten in den Jahren 2000 und 2010</h2>
+				<img src="images/Table_2000_2010_2.png"  width="1200">
+			</section>
+	
+			<section>
+				<h2>Von Bestandsdaten zu Migrationsströmen</h2>
+				<img src="images/Table_birthplace_A.png"  width="650">
+			</section>
+
+			<section>
+				<h2>Von Bestandsdaten zu Migrationsströmen</h2>
+				<img src="images/Table_birthplace_all.png"  width="1200">
+			</section>
+	
+			<section>
+				<h2>Geschätzte Migrationsmatrix</h2>
+				<img src="images/Table_result.png"  width="650">
+			</section>
+			
+			<section>
+				<h2>Globale Migration stabil bei 0,6 % der Weltbevölkerung</h2>
+				<img src="images/global-intensity.png"  width="700">
+			</section>
+			
+			<section data-background="images/flowmap-adam.jpg">	
+				<br><br><br><br>
+				<p style="text-align:center"><font color="black">Klassische Visualisierung von Migrationsströmen</font></p>
+			</section>
+			
+			<section data-background="images/Science_Fig4_1.jpg">	
+				<br><br>
+				<p style="text-align:center; line-height: 1.3; font-size:40px"><font color="black">Circular Migration Plot</font></p>
+			</section>
+			
+			<section data-background="images/circular1.png">	
+				<br><br><br>
+				<p style="text-align:center"><font color="white">Wanderungen zwischen 60 Ländern<br> über den Zeitraum 2005-10</font></p>
+			</section>
+			
+			<section data-background="images/text-tabelle.jpg">		
+			<h2>Wissenschaftskommunikation gewinnt an Bedeutung</h2>
+				<blockquote style="line-height: 1.3; font-size:44px">
+				“Scientists must learn to communicate with the public, be willing to do so and indeed consider it their duty to do so.”
+				</blockquote>
+				<p style="text-align:right">Royal Society, 1985</p>
+			</section>
+			
+			<section data-background="images/demogr-datasheet1.png">	
+			</section>
+			
+			<section data-background="images/datasheets_both.png">	
+			</section>		
+
+			
+			<section data-background="images/circular-world.png">	
+			<h2 style="text-align:center; color:#F4EBCE;background-color: rgba(0, 0, 0, 0.5)"><a href="http://www.global-migration.info" target="_blank">"The Global Flow of People"</a></h2>
+			<p style="text-align:center">Programmierung (d3.js) von Null2 Berlin</p>
+			</section>
+			
+			<section data-background="images/global-migration.png">
+			</section>			
+			
+			<!-- Interactive -->
+			<section style="width:800px">			
+			<div>
+					<nav role=navigation>
+					<div id="timeline"></div>
+					</nav>
+
+					<div id="diagram"></div>
+				</div>
+				  <script>
+					(function() {
+					  var help = d3.select('#help');
+					  help.on('click', function() {
+						var isActive = help.classed('active');
+						help
+						  .classed('active', !isActive)
+						  .transition()
+						  .style('width', isActive ? '30px' : '572px');
+					  });
+					  function helpOffset() {
+						var offset = Math.max((document.body.clientWidth - document.getElementById('container').clientWidth) / 2, 0);
+						help.style('right', offset + 'px');
+					  }
+					  d3.select(window).on('resize.help-resize', helpOffset);
+					  helpOffset();
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  var datafile = 'd3/json/migrations.json';
+					  var aLittleBit = Math.PI / 100000;
+					  d3.json(datafile, function(data) {
+						var now = 2005;
+						var chart = Globalmigration.chart(data, {
+						  element: '#diagram',
+						  now: now,
+						  animationDuration: 1400,
+						  margin: 125,
+						  arcPadding: 0.04,
+						  layout: {
+							threshold: 50000,
+							labelThreshold: 5000,
+							colors: 'cd3d08 ec8f00 6dae29 683f92 b60275 2058a5 00a592 009d3c 378974 ffca00'.split(' ').map(function(c) { return '#' + c; })
+						  }
+						});
+						Globalmigration.timeline(chart, {
+						  now: now,
+						  element: '#timeline'
+						});
+						chart.draw(now);
+					  });
+					})();
+				  </script>
+				  <script>
+					(function() {
+					  function loadScript(d,s,l,id){
+						var js,
+						fjs=d.getElementsByTagName(s)[0],
+						p=/^http:/.test(d.location)?'http':'https';
+						if(!id || !d.getElementById(id)){
+						  js=d.createElement(s);
+						  js.id=id;
+						  js.src=p+'://' + l;
+						  fjs.parentNode.insertBefore(js,fjs);
+						}
+					  }
+					})();
+				  </script>
+			</section>			
+	
+
+			<section>
+			<h2>Starkes Medieninteresse und positives Feedback über soziale Netzwerke</h2>
+			<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p>Fantastic visualization of global migration data. I'm on there if you zoom in a lot.<br><br> <a href="http://t.co/VeAUPXNrd6">http://t.co/VeAUPXNrd6</a></p>&mdash; Pumphrey&#39;s Math (@PumphreysMath) <a href="https://twitter.com/PumphreysMath/statuses/451694063184408577">April 3, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>
+
+			<section>
+				<blockquote class="twitter-tweet" width="520" align="center" data-conversation="none" data-cards="hidden"><p><a>#SomeoneTellMarineLePen</a> African migrants aren't invading us, and here's the data to prove it <br><br><a href="http://t.co/njcn66Xsjg">http://t.co/njcn66Xsjg</a> <a href="http://t.co/Ug4hTcl8V0">pic.twitter.com/Ug4hTcl8V0</a></p>&mdash; Jacques (@jacksometer) <a href="https://twitter.com/jacksometer/statuses/450603653158957057">March 31, 2014</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</section>			
+			
+			<section>
+				<h2>Fazit</h2>
+				<p>Migration ist ein komplexes Phänomen das zunehmend an Bedeutung gewinnt</p>
+				<p>Kaum Lehrstühle für Demographie / Bevölkerungsgeographie an deutschen Hochschulen</p>
+				<br>
+				<p>Erstmals gelingt die Bezifferung und Visualisierung globaler Migrationsströme</p>
+				<p>Globale Migration stabil bei 0,6 Prozent</p>
+				<br>
+				<p style="color:#ff7f00">Datenvisualisierung als Brücke zwischen Wissenschaft, Politik und Öffentlichkeit!?</p>
+			</section>
+			
+			<section data-background="images/deutschland-wanderung-2010.jpg">
+				<br><br><br><br><br><br>
+				<p style="text-align:center">Binnenwanderung in Deutschland <br> im Jahr 2010 <a href="http://www.nikolasander.com/nettowanderung-deutschland/" target="_blank"><font color="white">(Link)</font></a></p>
+				<br>
+				<p style="text-align:center">nikola.sander@oeaw.ac.at <br><a href="https://twitter.com/nikolasander" target="_blank"><font color="white">@nikolasander</font></a></p>
+			</section>
+
+		
+			
+		<!-- END SLIDES -->		
+		</div>
+	</div>
+	
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+
+	<script>
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: false,
+				history: false,
+				center: true,
+				slideNumber: true,
+				keyboard: true,
+				overview: true,
+				touch: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+	</script>
+	</div>
+</body>
+</html>
